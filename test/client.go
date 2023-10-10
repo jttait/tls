@@ -1,12 +1,12 @@
 package main
 
 import (
-	"crypto/tls"
-	"crypto/x509"
-	"io/ioutil"
-	"net/http"
+   "crypto/tls"
+   "crypto/x509"
+   "io/ioutil"
+   "net/http"
    "strings"
-	"time"
+   "time"
 )
 
 func createClient(filename string) *http.Client {
