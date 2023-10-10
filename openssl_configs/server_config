@@ -1,0 +1,22 @@
+[ req ]
+prompt = no
+distinguished_name = req_distinguished_name
+req_extensions = v3_req
+
+[ req_distinguished_name ]
+countryName = IN
+stateOrProvinceName = NSW
+localityName = Bengaluru
+organizationName = MyOrg
+commonName = Server
+
+[ v3_req ]
+basicConstraints = CA:false
+subjectAltName = @alt_names
+keyUsage = critical, digitalSignature, keyEncipherment
+extendedKeyUsage = serverAuth
+
+[alt_names]
+IP.1 = 172.20.10.2
+DNS.1 = ubuntu
+DNS.2 = localhost
