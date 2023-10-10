@@ -19,6 +19,6 @@ func TestShouldNotAuthenticateSelfSignedClient(t *testing.T) {
    client := createClient("badclient")
    _, err := makeCall(client)
    if err == nil {
-      t.Fatalf("Got: %v. Want: nil.\n", err)
+      t.Fatalf("Got: nil. Want: error.\n", err)
    }
 }
