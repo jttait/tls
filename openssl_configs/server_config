@@ -13,6 +13,4 @@ keyUsage = critical, digitalSignature, keyEncipherment
 extendedKeyUsage = serverAuth
 
 [alt_names]
-IP.1 = 172.20.10.2
-DNS.1 = ubuntu
 DNS.2 = localhost
