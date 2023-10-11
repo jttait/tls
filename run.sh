@@ -1,7 +1,7 @@
 CERTS=generated_certs
 CONFIGS=openssl_configs
 
-mkdir generated_certs
+mkdir -p generated_certs
 
 # Private key for Certificate Authority (CA)
 openssl genrsa -out $CERTS/ca.key 4096
