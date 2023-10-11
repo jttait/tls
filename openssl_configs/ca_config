@@ -10,10 +10,6 @@ distinguished_name = req_distinguished_name
 x509_extensions = v3_ca
 
 [ req_distinguished_name ]
-countryName = IN
-stateOrProvinceName = NSW
-localityName = Bengaluru
-organizationName = MyOrg
 commonName = RootCA
 
 [ v3_ca ]
