@@ -1,19 +1,9 @@
-[ ca ]
-default_ca = CA_LOC
-
-[ CA_LOC ]
-prompt = no
-
 [ req ]
 prompt = no
 distinguished_name = req_distinguished_name
 x509_extensions = v3_ca
 
 [ req_distinguished_name ]
-countryName = IN
-stateOrProvinceName = NSW
-localityName = Bengaluru
-organizationName = MyOrg
 commonName = RootCA
 
 [ v3_ca ]
